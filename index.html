@@ -11,35 +11,35 @@
     <header>
         <div class="top-line">
             <div class="wrapper">
-                <nav>
-                    <ul>
+                <nav class="nav clear">
+                    <ul class="about">
                         <li><a href="#">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
-                        <li><a href="#">Наші будівлі</a></li>
+                        <li><a href="our_house.html">Наші будівлі</a></li>
                         <li><a href="#">Акції</a></li>
                         <li><a href="#">Контакти</a></li>
                     </ul>
+                    <ul class="social">
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="tw"></a></li>
+                        <li><a href="#" class="inst"></a></li>
+                    </ul>
                 </nav>
-                <ul class="social">
-                    <li><a href="#" class="fb"></a></li>
-                    <li><a href="#" class="tw"></a></li>
-                    <li><a href="#" class="inst"></a></li>
-                </ul>
             </div>
         </div>
         <div class="header-contacts">
             <div class="wrapper">
                 <div class="row">
-                    <div class="coluwn logo">
-                        <img src="" alt="">
-                    </div>
+                    <div class="coluwn logo"><a href="#">
+                        <img src="./www/img/logo.png" alt="Лого Будівельна компанія">
+                    </div></a>
                     <div class="coluwn phones">
-                        <p><a href="tel:+380971002525" class="phone">+38(097) 100-25-25</a></p>
+                        <p class="phone"><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
                         <p><a href="tel:+380971002526">+38(097) 100-25-26</a></p>
                     </div>
-                    <div class="coluwn messengers">
-                        <p><a href="mailto:hataplus@hata.com.ua" class="messenger">hataplus@hata.com.ua</a></p>
-                        <p><a href="skype:hataplus">hataplus</a></p>
+                    <div class="coluwn messengers line">
+                        <p class="messenger"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
+                        <p class="skype"><a href="skype:hataplus">hataplus</a></p>
                     </div>
                     <div class="coluwn cta-bin">
                         <a href="#">Замовити дзвінок</a>
@@ -56,12 +56,12 @@
         </div>
     </header>
     <div class="wrapper">
-        <div class="row aside">
+        <div class="row aside clr">
             <aside class="column">
                 <p>Категорії проектів</p>
                 <ul class="aside-menu">
                     <li><a href="#">Генеральний план</a></li>
-                    <li><a href="#">Навколишнє середовище</a>
+                    <li class="aside-menu-li"><a href="#">Навколишнє середовище</a>
                         <ul class="sub-menu">
                             <li><a href="#">Продані</a></li>
                             <li><a href="#">Заброньованні</a></li>
@@ -75,33 +75,37 @@
                 </ul>
             </aside>
         </div>
-        <main>
+        <main class="main clr">
             <section class="content">
-                <h1>Компанія “Хата Плюс”</h1>
+                <h1 class="h1">Компанія “Хата Плюс”</h1>
                 <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.</p>
                 <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція по співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна ділянка, на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити альтанку і барбекю.</p>
+                <p><a href="#">Детальніше про нас</a></p>
             </section>
-            <section class="popular-projects">
-                <h2>Популярні проекти</h2>
-                <figure>
+            <section class="popular-projects row">
+                <h2 class="h2">Популярні проекти</h2>
+                <figure class="house">
+                    <img src="./www/img/house.png" alt="EDMONTON">
                     <figcaption>
-                        <h3>EDMONTON (338 м<sup>2</sup>)</h3>
+                        <h3 class="h3">EDMONTON (338 м<sup>2</sup>)</h3>
                         <p>Загальна площа будови: 312 м<sup>2</sup></p>
                         <p>Кількість спалень: 4</p>
                         <p>Гараж: 2 авто</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="house">
+                    <img src="./www/img/house2.png" alt="MONTREAL">
                     <figcaption>
-                        <h3>MONTREAL (332 м<sup>2</sup>)</h3>
+                        <h3 class="h3">MONTREAL (332 м<sup>2</sup>)</h3>
                         <p>Загальна площа будови: 290 м<sup>2</sup></p>
                         <p>Кількість спалень: 3</p>
                         <p>Гараж: 2 авто</p></p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="house">
+                    <img src="./www/img/house3.png" alt="CALGARY">
                     <figcaption>
-                        <h3>CALGARY (294 м<sup>2</sup>)</h3>
+                        <h3 class="h3">CALGARY (294 м<sup>2</sup>)</h3>
                         <p>Загальна площа будови: 272 м<sup>2</sup></p>
                         <p>Кількість спалень: 3</p>
                         <p>Гараж: 2 авто</p></p>                   
@@ -111,9 +115,10 @@
         </main>
     </div>
     <footer>
+        <div class="footer-colon">
         <div class="wrapper">
-            <div class="row">
-                <div class="column footer-menu">
+            <div class="row clr">
+                <div class="colum footer-menu">
                     <ul>
                         <li>
                             <a href="#">Будинки</a>
@@ -129,24 +134,25 @@
                         </li>
                     </ul>
                 </div>
-                <div class="column footer-menu">
+                <div class="colum footer-menu">
                     <ul>
-                        <li><a href="#"></a>Про компанію</li>
-                        <li><a href="#"></a>Страхування</li>
-                        <li><a href="#"></a>Контакти</li>
+                        <li><a href="#">Про компанію</a></li>
+                        <li><a href="#">Страхування</a></li>
+                        <li><a href="#">Контакти</a></li>
                     </ul>
                 </div>
-                <div class="coluwn phones">
-                    <p><a href="tel:+380971002525" class="phone">+38(097) 100-25-25</a></p>
+                <div class="coluwn phones phones-footer">
+                    <p class="phone"><a href="tel:+380971002525" class="phone">+38(097) 100-25-25</a></p>
                     <p><a href="tel:+380971002526">+38(097) 100-25-26</a></p>
                 </div>
-                <div class="coluwn messengers">
-                    <p><a href="mailto:hataplus@hata.com.ua" class="messenger">hataplus@hata.com.ua</a></p>
-                    <p><a href="skype:hataplus">hataplus</a></p>
+                <div class="coluwn messengers messengers-footer">
+                    <p class="messenger"><a href="mailto:hataplus@hata.com.ua" class="messenger">hataplus@hata.com.ua</a></p>
+                    <p class="skype"><a href="skype:hataplus">hataplus</a></p>
                 </div>
             </div>
-            <p class="copy">© Будівельна компанія “Хата Плюс” 2018.</p>
         </div>
+        </div>
+        <p class="copy">© Будівельна компанія “Хата Плюс” 2018.</p>
     </footer>
 </body>
 </html>
