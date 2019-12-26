@@ -345,6 +345,7 @@ nav li{
 main{
     float: left;
     margin-bottom: 48px;
+    margin-top: 35px;
 }
 .h1{
     font-size: 30px;
@@ -352,6 +353,7 @@ main{
     color: #24242b;
     font-family: "Roboto Slab";
     font-weight: 700;
+    margin: 0 0 18px 0;
 }
 .content{
     border-bottom: 1px solid #e4e4ec;
@@ -363,6 +365,13 @@ main{
     line-height: 24px;
     color: #666666;
     font-family: "Arial";
+    margin: 3px 0;
+}
+.content .mar-bot{
+    margin-bottom: 25px;
+}
+.content .mar-top{
+    margin-top: 25px;
 }
 .content p:last-child a{
     text-decoration: underline;
@@ -488,4 +497,10 @@ tbody th{
 tbody tr:hover{
     background-color: #fd8300;
     color: white;
+}
+.bottom{
+    margin-bottom: 26px;
+}
+.header-contactss{
+    border-bottom: 1px solid #f3f3f3;
 }
