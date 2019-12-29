@@ -104,7 +104,7 @@ nav ul{
     width: 19px;
     height: 16px;
     transition: all 0.2s ease;
-    background-position: -17px -17px;
+    background-position: -18px -17px;
 }
 .inst:hover{
     width: 15px;
@@ -112,6 +112,7 @@ nav ul{
     transition: all 0.2s ease;
     background-position: -17px -33px;
 }
+.header-contact,
 .header-contacts{
     padding: 30px 0;
 }
@@ -182,6 +183,12 @@ nav ul{
     text-decoration: none;
     transition: 1s ease all;
 }
+.cta-bin a:hover{
+    background-color: green;
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: underline;
+}
 .phone a:before{
     content: "";
     position: absolute;
@@ -245,7 +252,7 @@ nav ul{
 .special-offer{
     max-height: 200px;
     margin-bottom: 37px;
-    padding: 40px 0;
+    padding: 55px 0 40px;
     background-image: url(../img/Background.png);
     background-size: cover;
 }
@@ -257,22 +264,26 @@ nav ul{
     font-family: "Roboto Slab";
     font-weight: 700;
     text-align: center;
+    margin: 0;
+    text-transform: uppercase;
 }
 .special-description{
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     color: #ffffff;
+    margin: 10px 0 14px;
 }
-.special-price span{
-    font-size: 40px;
+.special-price{
+    font-size: 24px;
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
     text-align: center;
+    margin: 0;
 }
-.special-price{
-    font-size: 24px;
+.special-price span{
+    font-size: 40px;
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
@@ -372,7 +383,7 @@ nav ul{
 main{
     float: left;
     margin-bottom: 48px;
-    margin-top: 35px;
+    margin-top: 0;
 }
 .h1{
     font-size: 30px;
@@ -406,6 +417,11 @@ main{
     font-size: 14px;
     font-weight: bold;
     line-height: 24px;
+}
+.content p:hover:last-child a{
+    font-size: 18px;
+    color: #1f1f56;
+    text-decoration: overline;
 }
 .h2{
     font-size: 24px;
@@ -539,9 +555,7 @@ tbody tr:hover{
     background-color: #fd8300;
     color: white;
 }
-.bottom{
-    margin-bottom: 26px;
-}
-.header-contactss{
-    border-bottom: 1px solid #f3f3f3;
+.header-contact{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 48px;
 }
