@@ -343,7 +343,7 @@ nav ul{
     content: "";
     position: absolute;
     right: 15px;
-    top: 18px;
+    top: 20px;
     width: 6px;
     height: 10px;
     background: url(../img/sprites.png) left top no-repeat;
@@ -353,7 +353,7 @@ nav ul{
     content: "";
     position: absolute;
     right: 15px;
-    top: 21px;
+    top: 24px;
     width: 10px;
     height: 6px;
     background: url(../img/sprites.png) left top no-repeat;
