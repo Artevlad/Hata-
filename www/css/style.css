@@ -129,6 +129,7 @@ nav ul{
     float: left;
     vertical-align: top;
 }
+.coluwns a,
 .coluwn a{
     text-decoration: none;
     color: #25252c;
@@ -141,6 +142,7 @@ nav ul{
 .coluwn p{
     margin: 0;
 }
+.contact a,
 .phones a{
     font-size: 18px;
     font-weight: bold;
@@ -154,10 +156,12 @@ nav ul{
 .line{
     position: relative;
 }
+.mesenger a,
 .messengers a{
     font-size: 16px;
     line-height: 24px;
 }
+.mesenger,
 .messenger{
     text-decoration: underline;
 }
@@ -556,4 +560,128 @@ tbody tr:hover{
 .header-contact{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-bottom: 48px;
+}
+.only-contacts{
+    width: 100%;
+}
+.only-contact{
+    width: 50%;
+    float: left;
+}
+.right-contacts,
+.left-contacts,
+.right-contact,
+.left-contact{
+    float: left;
+    width: 50%;
+}
+.right-contact{
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.main-contacts{
+    width: 960px;
+    padding-bottom: 34px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid #e4e4ec;
+    box-sizing: border-box;
+}
+.h2-contact{
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+}
+.center-contacts{
+    margin: 0 auto;
+    width: 350px;
+    padding-left: 90px;
+    box-sizing: border-box;
+}
+.subtitle{
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    margin: 25px 0 18px;
+}
+.city{
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+    margin: 0 0 12px;
+}
+.contact-first{
+    margin: 0 0 10px;
+}
+.mesenger,
+.contact-last{
+    margin: 0;
+}
+.text{
+    width: 230px;
+    height: 38px;
+    padding-left: 16px;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+input{
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #c5c5d4;
+}
+.texts{
+    width: 470px;
+    height: 40px;
+    padding-left: 16px;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+textarea{
+    width: 470px;
+    height: 105px;
+    box-sizing: border-box;
+    padding: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    resize: vertical;
+    border-color: #c5c5d4;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+.submit{
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #fd8300;
+    border-radius: 20px;
+    font: bold 14px "Arial";
+    transition: all 0.2s ease;
+    border: none;
+}
+.checkbox{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.footer-lable p{
+    width: 220px;
+    margin: 0;
+    margin-right: 0;
+    display: inline;
+}
+.last-footer{
+    margin-bottom: 45px;
 }
