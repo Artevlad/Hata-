@@ -30,19 +30,21 @@
             </div>
         </div>
         <div class="header-contact">
-            <div class="wrapper">
+            <div class="wrapper clr">
                 <div class="row">
                     <div class="coluwn logo"><a href="#">
                             <img src="./www/img/logo.png" alt="Лого Будівельна компанія">
                         </a></div>
-                    <div class="coluwn phones">
-                        <p class="phone"><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
-                        <p><a href="tel:+380971002526">+38(097) 100-25-26</a></p>
-                    </div>
-                    <div class="coluwn messengers line">
-                        <p class="messenger"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-                        <p class="skype"><a href="skype:hataplus">hataplus</a></p>
-                    </div>
+                        <div class="phones_and_messengers">
+                            <div class="coluwn phones">
+                                <p class="phone"><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                                <p><a href="tel:+380971002526">+38(097) 100-25-26</a></p>
+                            </div>
+                            <div class="coluwn messengers line">
+                                <p class="messenger"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
+                                <p class="skype"><a href="skype:hataplus">hataplus</a></p>
+                            </div>
+                        </div>
                     <div class="coluwn cta-bin">
                         <a href="#">Замовити дзвінок</a>
                     </div>
@@ -50,11 +52,11 @@
             </div>
         </div>
     </header>
-    <div class="wrapper last-footer">
-        <main class="main-contacts clr">
+    <div class="wrapper clr">
+        <main class="main-contacts">
             <h1 class="h1">Контакти</h1>
             <div class="only-contacts">
-                <div class="only-contact coluwns">
+                <div class="only-contact coluwns clr">
                     <div class="left-contact">
                         <p class="subtitle">Наш офіс</p>
                         <p class="city">с. Війтівці, Хмельницька обл. 27500</p>
@@ -84,7 +86,7 @@
         <div class="only-contacts">
             <div class="only-contact coluwns">
                 <div class="center-contact">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1chXu4XfRDopYAc6QiLQowIzL43m9vx8m" width="466" height="293" style="border:0;" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1chXu4XfRDopYAc6QiLQowIzL43m9vx8m" width="466" height="299" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
             <div class="only-contact coluwns">
@@ -104,7 +106,7 @@
                     </form>
                 </div>
                 <div>
-                    <form>
+                    <form class="form-contact">
                         <label>
                             <input type="text" name="input-text" class="texts" placeholder="Тема повідомлення">
                         </label>
@@ -114,10 +116,12 @@
                         <label>
                             <input type="submit" class="submit" value="Відправити">
                         </label>
-                        <label class="footer-label">
-                            <input type="checkbox" class="checkbox">
-                                Я бажаю отримувати останні новини
-                        </label>
+                        <p>
+                            <input type="checkbox" class="checkbox" id="want">
+                            <label class="footer-label" for="want">
+                                    Я бажаю отримувати останні новини
+                            </label>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -127,28 +131,30 @@
         <div class="footer-colon">
             <div class="wrapper">
                 <div class="row clr">
-                    <div class="colum footer-menu">
-                        <ul>
-                            <li>
-                                <a href="#">Будинки</a>
-                            </li>
-                            <li>
-                                <a href="#">Інфраструктура</a>
-                            </li>
-                            <li>
-                                <a href="#">Сервіс</a>
-                            </li>
-                            <li>
-                                <a href="#">Новини</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="colum footer-menu">
-                        <ul>
-                            <li><a href="#">Про компанію</a></li>
-                            <li><a href="#">Страхування</a></li>
-                            <li><a href="#">Контакти</a></li>
-                        </ul>
+                    <div class="phones_and_messengers">
+                        <div class="coluwn footer-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Будинки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Інфраструктура</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сервіс</a>
+                                </li>
+                                <li>
+                                    <a href="#">Новини</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="coluwn footer-menu">
+                            <ul>
+                                <li><a href="#">Про компанію</a></li>
+                                <li><a href="#">Страхування</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="coluwn phones phones-footer">
                         <p class="phone"><a href="tel:+380971002525" class="phone">+38(097) 100-25-25</a></p>

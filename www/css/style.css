@@ -14,20 +14,20 @@ html{
 }
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 .wrapper{
     max-width: 960px;
     margin: 0 auto;
 }
-.wrapper:after{
-    content: "";
-    display: block;
-    clear: both;
-}
 .clr:after{
     content: "";
     display: block;
     clear: both;
+}
+[type="checkbox"]{
+    position: absolute;
+    visibility: hidden;
 }
 .top-line{
     background-color: #1f1f56;
@@ -117,15 +117,15 @@ nav ul{
     padding: 35px 0;
 }
 .row{
-    margin: 0 -14px;
+    margin: 0 -1.5%;
     display: block;
 }
 .aside{
     float: right;
 }
 .coluwn{
-    width: 219px;
-    margin: 0 14px;
+    width: 22%;
+    margin: 0 1.5%;
     float: left;
     vertical-align: top;
 }
@@ -186,10 +186,10 @@ nav ul{
     color: #25252c;
     text-decoration: none;
     transition: 1s ease all;
+    box-sizing: border-box;
 }
 .cta-bin a:hover{
     background-color: #fd8300;
-    font-size: 17px;
 }
 .phone a:before{
     content: "";
@@ -382,16 +382,17 @@ nav ul{
     background-color: #cecedd;
 }
 .main{
-    max-width: 714px;
+    width: 714px;
 }
 main{
     float: left;
     margin-bottom: 48px;
     margin-top: 0;
+    width: 100%;
 }
 .h1{
     font-size: 30px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #24242b;
     font-family: "Roboto Slab";
     font-weight: 700;
@@ -422,6 +423,12 @@ main{
     font-weight: bold;
     line-height: 24px;
 }
+.house{
+    width: 219px;
+    float: left;
+    vertical-align: top;
+    margin: 0 14px;
+}
 .content p:hover:last-child a{
     text-decoration: none;
 }
@@ -431,16 +438,9 @@ main{
     color: #24242b;
     font-family: "Roboto Slab";
     font-weight: 700;
-    margin-left: 14px;
 }
 figure{
     float: left;
-}
-.house{
-    width: 219px;
-    float: left;
-    margin: 0 14px;
-    vertical-align: top;
 }
 .h3{
     font-size: 14px;
@@ -471,10 +471,10 @@ figcaption a:hover{
 .footer-menu{
     float: left;
     text-decoration: none;
-    margin: 0 14px;
 }
 .footer-menu ul{
     margin: 0;
+    padding: 0;
 }
 .footer-menu li{
     list-style: none;
@@ -486,18 +486,6 @@ figcaption a:hover{
     line-height: 26px;
     color: #666666;
     font-family: "Arial";
-    margin: 0;
-}
-.colum{
-    float: left;
-    width: 219px;
-    margin: 0 14px;
-    vertical-align: top;
-}
-.colum ul{
-    padding: 0;
-}
-.colum p{
     margin: 0;
 }
 .copy{
@@ -580,7 +568,7 @@ tbody tr:hover{
     box-sizing: border-box;
 }
 .main-contacts{
-    width: 960px;
+    width: 100%;
     padding-bottom: 34px;
     margin-bottom: 34px;
     border-bottom: 1px solid #e4e4ec;
@@ -686,12 +674,306 @@ textarea{
     margin-left: 30px;
     margin-right: 10px;
 }
+.form-contact p label{
+    position: relative;
+}
+.form-contact p label:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.form-contact p label:before{
+    border-color: #3e6aff;
+}
+.form-contact p label:after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 3px;
+    top: 5px;
+    left: 5px;
+    transform: rotate(-45deg);
+    border-bottom: 1.5px solid #244dd7;
+    border-left: 1.5px solid #244dd7;
+}
 .footer-label{
     width: 220px;
     margin: 0;
-    margin-right: 0;
     display: inline;
 }
-.last-footer{
-    margin-bottom: 45px;
+.phones-footer{
+    margin-left: 0;
+}
+.row .house:last-child{
+    margin-right: 0;
+}
+@media screen and (max-width: 1030px){
+    .wrapper{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 986px){
+    .coluwn{
+        width: 30.3%;
+        margin: 0 1.5%;
+        float: left;
+        vertical-align: top;
+    }
+    .popular-projects .row .ff_house{
+        margin: 0 auto;
+    }
+    .ff_house{
+        float: none;
+    }
+    .cta-bin{
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+    .messengers,
+    .footer-menu{
+        padding-bottom: 20px;
+    }
+    .aside,
+    .aside ul{
+        width: 100%;
+        float: none;
+    }
+    .aside{
+        padding-bottom: 20px;
+    }
+    .main{
+        width: 100%;
+    }
+    .first_menu{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 980px){
+    .cta-bin{
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+    .messengers,
+    .footer-menu{
+        padding-bottom: 20px;
+    }
+    .aside,
+    .aside ul{
+        width: 100%;
+        float: none;
+    }
+    .aside{
+        padding-bottom: 20px;
+    }
+    .main{
+        width: 100%;
+    }
+    .first_menu{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .only-contact{
+        float: none;
+        width: 100%;
+    }
+    .left-contact,
+    .right-contact{
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .only-contacts{
+        width: 465px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main-contacts h1{
+        text-align: center;
+    }
+    .center-contacts{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 770px){
+    .first_menu{
+        float: left;
+        margin: 0 1.5%;
+    }
+    .phones_and_messengers{
+        width: 500px;
+        float: left;
+    }
+    .phones,
+    .messengers{
+        width: 46%;
+    }
+    .logo,
+    .cta-bin{
+        display: inline-block;
+        width: 235px;
+    }
+    .footer-menu{
+        width: 223px;
+    }
+    .header-contact .row,
+    .footer-colon .row,
+    .header-contacts .row{
+        width: 485px;
+        margin: 0 auto;
+    }
+    .footer-menu,
+    .phones,
+    .cta-bin,
+    .messengers{
+        text-align: left;
+    }
+    .logo{
+        padding-bottom: 20px;
+    }
+    .messengers{
+        padding-bottom: 0;
+    }
+    .phones-footer{
+        margin-left: 1.5%;
+    }
+}
+@media screen and (max-width: 700px){
+    .nav,
+    .social{
+        float: none;
+        margin: 0 auto;
+    }
+    .nav{
+        padding-bottom: 20px;
+        max-width: 520px;
+    }
+    .top-line{
+        margin: 0 auto;
+    }
+    .about li:last-child{
+        margin-right: 0;
+    }
+    .social li:first-child{
+        margin-left: 0;
+    }
+    .social{
+        max-width: 96px;
+    }
+    .popular-project .house:last-child{
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+    .popular-projects .row,
+    .popular-project .row{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .popular-projects .house,
+    .popular-project .house{
+        width: 47%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .t_house{
+        float: left;
+    }
+    .popular-projects .row .ff_house{
+        float: left;
+    }
+}
+@media screen and (max-width: 536px){
+    .about{
+        text-align: center;
+    }
+    .coluwn{
+        width: 100%;
+    }
+    .popular-projects .row,
+    .header-contact .row,
+    .popular-project .row,
+    .footer-colon .row,
+    .header-contacts .row{
+        width: 223px;
+    }
+    .house,
+    .footer-menu,
+    .logo,
+    .phones,
+    .messengers{
+        float: none;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .phones_and_messengers{
+        width: 100%;
+    }
+    .line:before {
+        left: -3px;
+    }
+    .cta-bin{
+        text-align: center;
+    }
+    .messengers-footer{
+        padding-bottom: 0;
+    }
+    .popular-projects .house,
+    .popular-project .house{
+        width: 100%;
+    }
+    .only-contacts,
+    .center-contact{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+        left: 0;
+    }
+    .text,
+    .texts,
+    textarea{
+        width: 100%;
+    }
+    .right-contacts,
+    .left-contacts{
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 530px){
+    .left-contact,
+    .right-contact{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .only-contacts{
+        width: 440px;
+        text-align: center;
+    }
+    .center-contacts{
+        padding: 0;
+        width: 100%;
+    }
+    .right-contact{
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 465px){
+    .only-contacts{
+        width: 265px;
+    }
 }
