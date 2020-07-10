@@ -261,7 +261,7 @@ nav ul{
 .special-proposition{
     font-size: 30px;
     letter-spacing: 2px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #ffffff;
     font-family: "Roboto Slab";
     font-weight: 700;
@@ -893,7 +893,8 @@ textarea{
         margin-left: 0;
     }
     .social{
-        max-width: 96px;
+        max-width: 659px;
+        text-align: center;
     }
     .popular-project .house:last-child{
         float: none;
