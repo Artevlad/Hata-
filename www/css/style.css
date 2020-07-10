@@ -590,7 +590,7 @@ tbody tr:hover{
 }
 .center-contact iframe{
     position: absolute;
-    top: -16%;
+    top: -20%;
 }
 .center-contacts{
     margin: 0 auto;
@@ -670,10 +670,10 @@ textarea{
     transition: all 0.2s ease;
     border: none;
 }
-.checkbox{
+/* .checkbox{
     margin-left: 30px;
     margin-right: 10px;
-}
+} */
 .form-contact p label{
     position: relative;
 }
@@ -682,7 +682,7 @@ textarea{
     position: absolute;
     width: 15px;
     height: 15px;
-    left: 0;
+    left: -30px;
     border-radius: 3px;
     border: 1px solid #ccc;
     background-color: white;
@@ -696,7 +696,7 @@ textarea{
     width: 6px;
     height: 3px;
     top: 5px;
-    left: 5px;
+    left: -25px;
     transform: rotate(-45deg);
     border-bottom: 1.5px solid #244dd7;
     border-left: 1.5px solid #244dd7;
@@ -709,13 +709,22 @@ textarea{
 .phones-footer{
     margin-left: 0;
 }
+.p_label_footer{
+    display: inline-block;
+    margin-left: 40px;
+}
 .row .house:last-child{
     margin-right: 0;
 }
+.table_column{
+    min-width: 55px;
+}
+.table_wrapper{
+    overflow-x: scroll;
+}
 @media screen and (max-width: 1030px){
     .wrapper{
-        margin-left: 20px;
-        margin-right: 20px;
+        padding: 0 20px;
     }
 }
 @media screen and (max-width: 986px){
@@ -759,7 +768,6 @@ textarea{
 }
 @media screen and (max-width: 980px){
     .cta-bin{
-        text-align: center;
         float: none;
         margin: 0 auto;
     }
@@ -793,7 +801,7 @@ textarea{
         text-align: center;
     }
     .only-contacts{
-        width: 465px;
+        max-width: 940px;
         margin: 0 auto;
         text-align: center;
     }
@@ -802,6 +810,24 @@ textarea{
     }
     .center-contacts{
         padding: 0;
+    }
+    .center-contact{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+        left: 0;
+    }
+    .text,
+    .texts,
+    textarea,
+    .submit{
+        width: 100%;
+    }
+    .right-contacts,
+    .left-contacts{
+        float: none;
+        width: 100%;
     }
 }
 @media screen and (max-width: 770px){
@@ -907,7 +933,8 @@ textarea{
     .popular-project .row,
     .footer-colon .row,
     .header-contacts .row{
-        width: 223px;
+        max-width: 446px;
+        width: 100%;
     }
     .house,
     .footer-menu,
@@ -938,19 +965,8 @@ textarea{
     .center-contact{
         width: 100%;
     }
-    iframe{
-        width: 100%;
-        left: 0;
-    }
-    .text,
-    .texts,
-    textarea{
-        width: 100%;
-    }
-    .right-contacts,
-    .left-contacts{
-        float: none;
-        width: 100%;
+    .line:before{
+        position: relative;
     }
 }
 @media screen and (max-width: 530px){
@@ -972,8 +988,14 @@ textarea{
         padding-left: 0;
     }
 }
+@media screen and (max-width: 480px){
+    .wrapper{
+        padding: 0 10px;
+    }
+}
 @media screen and (max-width: 465px){
     .only-contacts{
-        width: 265px;
+        max-width: 423px;
+        width: 100%;
     }
 }
