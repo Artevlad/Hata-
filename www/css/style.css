@@ -928,7 +928,7 @@ nav input {
   input {
     visibility: visible;
   }
-  nav span {
+  nav label {
     display: inline-block;
     width: 30px;
     height: 30px;
