@@ -925,14 +925,6 @@ nav input {
   input:checked ~ .about {
     display: block;
   }
-  input:checked ~ label{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: url(/www/img/burger_kastul_two.png) no-repeat center;
-    background-size: contain;
-    z-index: 10;
-  }
   input {
     visibility: visible;
   }
@@ -940,7 +932,15 @@ nav input {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: url(/www/img/burger_kastul.png) no-repeat center;
+    background: url(../img/burger_kastul.png) no-repeat center;
+    background-size: contain;
+    z-index: 10;
+  }
+  input:checked ~ label{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/burger_kastul_two.png) no-repeat center;
     background-size: contain;
     z-index: 10;
   }
