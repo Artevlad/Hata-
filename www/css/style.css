@@ -934,6 +934,7 @@ nav input {
     height: 30px;
     background: url(/www/img/burger_kastul.png) no-repeat center;
     background-size: contain;
+    z-index: 10;
   }
   .about li{
     display: block;
